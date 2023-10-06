@@ -11,10 +11,9 @@ useEffect(()=>{
     let tempChartData = props.parentEntries.map(entry => {
         return [entry.date , entry.weight];
     });
-    setChartData(tempChartData)
+    setChartData(tempChartData);
+}, [props.parentEntries])
 
-})
-   
 
 
     return ( 
